@@ -1,0 +1,28 @@
+---
+title: "Air Pollution Report"
+author: "Nelsha Athauda"
+date: "11/3/2021"
+output: html_document
+---
+
+```{r, include = FALSE}
+here::i_am("Rmd/Report.Rmd")
+knitr::opts_knit$set(root.dir = here::here())
+```
+
+## Air Pollution Background
+
+Aerosol Optical Depth (AOD) is the measure of aerosols in the atmosphere within a single measured column. AOD is commonly used as an indicator for Particulate Matter (PM), an EPA Criteria air pollutant which causes adverse effects in cardiovascular and respiratory health. These scripts analyzed the relationships between four AOD wavelengths as measured by one air pollution sampling unit for diagnostic purposes.
+
+
+## Wavelength Comparison
+
+This plot compares the four wavelengths of AOD together. This is used as a diagnostic to test if a unit is ready to go back into the field after getting serviced.
+
+```{r, echo = FALSE}
+knitr::include_graphics(here::here("figs", "Wavength_Comparison.png"))
+```
+
+The figure shows us that each wavelength channel follows the same trend. This means the channels are all aligned and the unit can return to the field for outdoor air pollution sampling. 
+
+
