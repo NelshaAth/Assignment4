@@ -1,22 +1,11 @@
 # INFO-550 Data Science Toolkit Coursework
 
-Hi! For assignment 4, I analyzed a data file from an particulate matter sensor (units 91) to see if they were both fully functioning. 
-To analyze the data you will need to have two R packages installed: tidyverse and lubridate. Both packages can be installed using R commands
+Hi! For assignment 4, I analyzed a data file from an particulate matter sensor (units 91) to see if the aerosol optical depth wavelength channels are aligned after the unit was serviced. 
+The data file is in the data folder, the R script to generate the figure is in the R folder, and the Rmd script that generates the final report is in the Rmd folder. 
+A makefile is in the main project folder which is able to generate the report without having to run the scripts separately on your own. Renv was used to create a reproducible environment. Please use the line below to restore the R environment used to run the scripts and install the required packages:
 
 ```
-installed_pkgs <- row.names(installed.packages())
-pkgs <- c("tidyverse", "lubridate")
-for(p in pkgs){
-	if(!(p %in% install_pkgs)){
-		install.packages(p)
-	}
-}
+renv::restore()
 ```
 
-To run the script, from the project folder you can run:
-
-```
-Rscript -e "rmarkdown::render('Homework_3_Nelsha.Rmd')" 
-```
-
-This will hopefully create a file called Report.html output with the results.
+This will create a file called Report.html output with the results.
