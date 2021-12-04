@@ -17,6 +17,7 @@ make
 ```
 
 ## ASSIGNMENT 4
+Link to Docker Image: https://hub.docker.com/repository/docker/nelshaath/info_550
 To download the Docker image of this project, pull the image:
 ```
 docker pull nelshaath/info_550:latest
