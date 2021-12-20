@@ -14,22 +14,18 @@ A makefile is in the main project folder which is able to generate the report wi
 make
 ```
 
-## Final Assignment :D
+## Final Assignment 
 Link to Docker Hub Image: https://hub.docker.com/repository/docker/nelshaath/info_550
 
 To download the Docker image of this project, pull the image in your terminal:
 ```
 docker image pull nelshaath/info_550:latest
 ```
-and then build the image
-```
-docker build -t info_550 .
-```
 To see the output you will need to mount the directory to a local folder on your device. You must change the path to a folder on your device!!!
 ```
 docker run -v /path/to/project/R:/info_550/Rmd -it info_550
 ```
 
-The output is the Report.html file <3
+The output is the Report.html file
 
-Please email me at Nelsha.Athauda@emory.edu if you're having any problems! Happy end of term~
+Please email me at Nelsha.Athauda@emory.edu if you're having any problems! 
